@@ -16,11 +16,20 @@
         <p><strong>Have you ever wondered&nbsp;</strong>how the classic "Hello World" program is written in different languages? If you did, then this is perfect for you. No more endless searching. Find all the different languages on one website.<br></p>
         <div class="card code-container shadow">
             <div class="card-body">
-                <div class="area-helper"><textarea id="codearea" class="code-area">this shows some code</textarea></div>
+                <div class="area-helper">
+                    <p>I want to see hello world written in:</p><select id="langselect" class="lang-select">
+                        <option value="0" selected="">Select</option>
+                        <option value="java">Java</option>
+                    </select>
+                </div>
+                <div class="area-helper"><button class="btn btn-primary go-btn" type="button" onclick="selectLanguage()">Go!</button></div>
+                <div class="area-helper"><textarea id="codearea" class="code-area" readonly="" rows="10">Welcome to everyhelloworld! Please select the language you want to see!</textarea></div>
             </div>
         </div>
+        <div class="footer-div"><small class="footer-text">built by miit0o</small></div>
     </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/langselector.js"></script>
 </body>
 
 </html>
