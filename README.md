@@ -10,7 +10,7 @@
 
 No more endless searching. Get all the information you need from this repository.
 
-## Why dos this exist?
+## Why does this exist?
 Very good question. And to be honest, I don't really know. I had this idea in the middle of the night, and I wanted to do it.
 
 ## What is this for?
