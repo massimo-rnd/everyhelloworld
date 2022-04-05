@@ -1,7 +1,7 @@
 function selectLanguage(){
-    if (document.getElementById("langselect").value == "0")
+    if (document.getElementById("langselect").value == "")
     {
-        alert("Please select any language!");
+        alert("Please type in a language!");
     } else{
         var value = document.getElementById("langselect").value;
         console.log(value);
@@ -10,11 +10,26 @@ function selectLanguage(){
 }
 
 function getCode(codelanguage){
-    //maybe do it with a database?
-    var client = new XMLHttpRequest();
-    client.open('GET', '/langstorage/' + codelanguage);
-    client.onreadystatechange = function() {
-    document.getElementById("codearea").value = client.responseText;
+    //check if language is available
+
+    var langfile = '/langstorage/' + codelanguage;
+
+    if (UrlExists(langfile) == true){
+        var client = new XMLHttpRequest();
+        client.open('GET', '/langstorage/' + codelanguage);
+        client.onreadystatechange = function() {
+            document.getElementById("codearea").value = client.responseText;
+        }
+        client.send();
+    }else{
+        alert("Language not available")
     }
-    client.send();
+}
+
+function UrlExists(url)
+{
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    return http.status!=404;
 }
