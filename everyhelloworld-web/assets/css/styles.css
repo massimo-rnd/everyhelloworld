@@ -1,0 +1,37 @@
+body {
+  background-color: #2C3E50;
+}
+
+.code-container {
+  background-color: #34495E;
+}
+
+.content-section {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+h1 {
+  color: #F39C12;
+  text-align: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+.code-area {
+  background-color: #2c3e50;
+  width: 90%;
+  color: white;
+}
+
+.area-helper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
