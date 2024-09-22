@@ -1,3 +1,5 @@
+![Repo-Image](https://druffko.gg/github-images/everyhelloworld.png)
+
 <div align="center">
     <h1>EveryHelloWorld</h1>
     <p>One repository. Almost every language. Hello World for everyone.</p>
